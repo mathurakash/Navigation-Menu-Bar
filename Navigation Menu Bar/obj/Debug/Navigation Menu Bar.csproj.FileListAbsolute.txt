@@ -1,0 +1,105 @@
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Navigation Menu Bar.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Navigation Menu Bar.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Navigation Menu Bar.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\MaterialDesignColors.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\MaterialDesignColors.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.csprojAssemblyReference.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Browser.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Calculator.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\MainWindow.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Music.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\App.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar_MarkupCompile.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar_MarkupCompile.lref
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\App.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Browser.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Calculator.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\MainWindow.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Music.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.g.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation_Menu_Bar.Properties.Resources.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.csproj.GenerateResource.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.csproj.CopyComplete
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Paint.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Paint.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\SystemInfo.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\SystemInfo.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Home.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Home.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\SplashScreen.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\SplashScreen.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation_Menu_Bar.Storage.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Data.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Graphviz.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Serialization.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Core.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Core.PCL.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Graphs.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Graphs.Entities.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Data.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Graphviz.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\QuickGraph.Serialization.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Core.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\XAct.Graphs.xml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\shootzombi.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\shootzombi.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\shootzombi.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\AdvancedNotepad_CSharp.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\AdvancedNotepad_CSharp.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\AdvancedNotepad_CSharp.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Panguian.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Panguian.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Panguian.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\ShutDown.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\ShutDown.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Clock.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Clock.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Text_To_Speech.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Text_To_Speech.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Contact.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Contact.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\NetworkCommsDotNet.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\WPFChatExample.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\WPFChatExample.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\My Radio Station.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\My Radio Station.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\My Radio Station.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Login.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\UserDetails.mdf
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\UserDetails_log.ldf
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Navigation Menu Bar_Content.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Login.baml
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Register.g.cs
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\USER.mdf
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\bin\Debug\USER_log.ldf
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\obj\Debug\Register.baml

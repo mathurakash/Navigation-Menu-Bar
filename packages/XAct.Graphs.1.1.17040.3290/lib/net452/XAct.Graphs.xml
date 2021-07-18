@@ -1,0 +1,1732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XAct.Graphs</name>
+    </assembly>
+    <members>
+        <member name="T:XAct.Graphs.IDefaultGraphPersistenceService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.DefaultGraphPersistenceService">
+            <summary>
+            Default implementation of the
+            <see cref="T:XAct.Graphs.IDefaultGraphPersistenceService"/> (which is a
+            <see cref="T:XAct.Graphs.IGraphPersistenceService`2"/>)
+            contract.
+            </summary>
+            <internal>
+            Services have to be registered both with and 
+            without generic typeparams, as users might be using the non 
+            generic interface, but the other parts of the system
+            will be invoking the service using generic typeparams.
+            </internal>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.DefaultGraphPersistenceService.#ctor(XAct.Diagnostics.ITracingService,XAct.Graphs.IDefaultGraphRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.DefaultGraphPersistenceService" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="graphRepositoryService">The graph repository service.</param>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.#ctor(XAct.Environment.IPrincipalService,XAct.Domain.Repositories.IRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService" /> class.
+            </summary>
+            <param name="principalService">The principal service.</param>
+            <param name="repositoryService">The repository service.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.GetAttributeValue(System.Boolean,XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Gets the attribute value.
+            </summary>
+            <param name="currentUser">if set to <c>true</c> [current user].</param>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.RemoveAttributeValue(System.Boolean,XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Removes the specific element's attribute value.
+            </summary>
+            <param name="currentUser">if set to <c>true</c> [current user].</param>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.CleareAttributeValues``1(System.Boolean,XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Cleares the specific element's attribute values.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="currentUser">if set to <c>true</c> [current user].</param>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.GetSharedAttributes(System.Boolean,XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Gets the current user's attributes for a single edge/vertex.
+            </summary>
+            <param name="currentUser">if set to <c>true</c> [current user].</param>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The vertex's GUID.</param>
+            <returns></returns>
+            <internal>
+            Does not need GraphId argument as one cannot get a ElementId without a GraphId
+              </internal>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.GetCurrentUserAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Gets the current user's attributes for a single edge/vertex.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The vertex's GUID.</param>
+            <returns></returns>
+            <internal>
+            Does not need GraphId argument as one cannot get a ElementId without a GraphId
+              </internal>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.PersistOnCommit(XAct.Graphs.GraphRepositoryVertexAttribute[])">
+            <summary>
+            Persists the given <see cref="T:XAct.Graphs.GraphRepositoryVertexAttribute"/>
+            on next commit.
+            </summary>
+            <param name="attributes">The attributes.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.SetAttributeValue(XAct.Graphs.GraphRepositoryVertexAttribute)">
+            <summary>
+            Persist the new or existing specific element's attribute value.
+            </summary>
+            <param name="graphElementAttribute">The graph vertex attribute.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.GetAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Gets the specific element'sattribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <returns></returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.RemoveAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Removes the specific element's attribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.CleareAttributeValues``1(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Cleares the specific element's attribute values.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeRepositoryService.GetSharedAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Gets the current user's attributes for a single edge/vertex.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="vertexGuid">The vertex's GUID.</param>
+            <returns></returns>
+            <internal>
+            Does not need GraphId argument as one cannot get a ElementId without a GraphId
+              </internal>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphVertexAttributeService">
+            <summary>
+            An implementation of 
+            <see cref="T:XAct.Graphs.IGraphVertexAttributeService"/>,
+            which is a <see cref="T:XAct.Graphs.IGraphVertexAttributeService"/>
+            contract.
+            </summary>
+        </member>
+        <member name="F:XAct.Graphs.Implementations.GraphVertexAttributeService.CacheVertexKey">
+            <summary>
+            The session key for vertex attributes.
+            </summary>
+        </member>
+        <member name="F:XAct.Graphs.Implementations.GraphVertexAttributeService.CacheEdgeKey">
+            <summary>
+            The session key for edge attributes.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.#ctor(XAct.Diagnostics.ITracingService,XAct.Environment.IDateTimeService,XAct.Environment.IPrincipalService,XAct.State.IContextStateService,XAct.Graphs.IGraphVertexAttributeRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.GraphVertexAttributeService" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="dateTimeService">The date time service.</param>
+            <param name="principalService">The principal service.</param>
+            <param name="contextStateService">The context state service.</param>
+            <param name="graphVertexAttributeRepositoryService">The graph repository service.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.GetAttributeValue``1(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Gets the attribute value.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.SetAttributeValue``1(XAct.Graphs.GraphElementType,System.Guid,System.String,``0)">
+            <summary>
+            Sets the singular attribute value.
+            <para>
+            Note that the value will be serialized in such a manner 
+            that it can be subsequently retrieved as a typed variable, 
+            rather than just <c>object</c> or <c>string</c>.
+            </para>.
+            </summary>
+            <internal>
+            Note that all updates to Attributes will be via this service,
+            one at a time, rather than through a collection of attributes.
+            <para>
+            This is so that the <c>GetAttributeValue</c> 
+            can be invested with enough logic to fall through to a 
+            Base (general value) Service.
+            </para>
+            </internal>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.RemoveAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Removes the attribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.ResetAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Resets the attributes so that next request loads from a datastore
+            before returning any found attributes.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="entityGuid">The entity GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.GetUserAttributes(XAct.Graphs.GraphElementType,System.Guid,System.Boolean)">
+            <summary>
+            Gets the current thread's user's vertex/edge attributes.
+            <para>
+            Note that we do *NOT* ever return the list. This service is the only 
+            means to getting to a attribute value (via <c>GetAttribute</c>)
+            so that it can given enough logic to fall back to a base/general/all users
+            value.
+            </para>
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The edge/vertex guid.</param>
+            <param name="forceRefresh">if set to <c>true</c> [force refresh].</param>
+            <returns>
+            Returns null if no entities
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">entityType</exception>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.GraphElementUserAttributesCache(System.Guid)">
+            <summary>
+            Gets the collection of attributes for just one elemement:
+            </summary>
+            <param name="elementGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphVertexAttributeService.GetCurrentUserGraphElementAttributes">
+            <summary>
+            Gets the collection of all known attributes for all vertices of the current user:
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphDiagramService">
+            <summary>
+            An implementation of
+            <see cref="T:XAct.Graphs.IGraphDiagramService"/>
+            to manage Diagrams made up of Graph Edges and Vertices
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphDiagramService.#ctor(XAct.Diagnostics.ITracingService,XAct.Domain.Repositories.IRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.GraphDiagramService" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="repositoryService">The repository service.</param>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphElementsAttributes">
+            <summary>
+            A single user's cache of the 
+            <see cref="T:XAct.Graphs.GraphElementAttributes"/>s for all vertices/edges 
+            that have been traversed/rendered (and not yet culled).
+            <para>
+            Used by an implementation of 
+            <see cref="T:XAct.Graphs.IGraphVertexAttributeService"/>.
+            </para>
+            </summary>
+            <remarks>
+            <para>
+            In a multiuser website, on request startup, the user's cache is loaded
+            with only the items currently being displayed. This is a much smaller
+            set of vertices/edges than all the vertices/edges with user-specific
+            nodes that could be traversed.
+            </para>
+            <para>
+            The much larger set of user-specific values needed for traversals 
+            are loaded only before a traversal operation is invoked.
+            </para>
+            <para>
+            This cache is cleared on request end.
+            </para>
+            </remarks>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2">
+            <summary>
+            An implementation of the
+            <see cref="T:XAct.Graphs.IGraphPersistenceService`2" />
+            contract.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.#ctor(XAct.Diagnostics.ITracingService,XAct.Graphs.IDefaultGraphRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2"/> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="graphRepositoryService">The graph repository service.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetGraph(System.String)">
+            <summary>
+            Gets the graph description.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetGraph(System.Guid)">
+            <summary>
+            Gets the graph description.
+            </summary>
+            <param name="guid">The GUID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.DeleteGraph(System.Guid)">
+            <summary>
+            Deletes the graph package.
+            </summary>
+            <param name="guid">The GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.PersistGraph(XAct.Graphs.GraphRepositoryPackageSchema)">
+            <summary>
+            Persists the specified graph definition.
+            </summary>
+            <param name="graphDefinition">The graph definition.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetGraphData(System.Guid)">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <param name="graphId">The graph identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.VertexExists(System.Guid)">
+            <summary>
+            Determine if there is a record for the vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetVertex(System.Guid)">
+            <summary>
+            Gets the specified vertex.
+            <para>
+            Note: Only called by IGraph{V,E} to Complete an incomplete Graph.
+            </para>
+            </summary>
+            <param name="vertexId">The id of the vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetVertex(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetVertexAndEdges(System.Guid)">
+            <summary>
+            Gets the vertex and edges.
+            </summary>
+            <param name="vertexId">The vertex identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.GetVertexAndEdges(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets the vertex and edges.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.RefreshVertex(`0)">
+            <summary>
+            Refreshes the vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.PersistVertex(`0)">
+            <summary>
+            Persists the specified vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.DeleteVertex(`0)">
+            <summary>
+            Deletes the vertex (on next commit), as well as Edges that connect to it.
+            </summary>
+            <param name="graphVertex">The graph vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.EdgeExists(System.Guid)">
+            <summary>
+            Determine if there is a record for the edge.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.PersistEdge(`1)">
+            <summary>
+            Adds the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.MapTo(`0,System.Boolean)">
+            <summary>
+            Maps the specified GraphVertex to the destination <see cref="T:XAct.Graphs.GraphRepositoryVertex" />
+            </summary>
+            <param name="graphVertex">The graph vertex.</param>
+            <param name="refetchFromDataStore">if set to <c>true</c> [refetch from data store].</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.MapTo(XAct.Graphs.GraphRepositoryVertex)">
+            <summary>
+            Maps the specified <see cref="T:XAct.Graphs.GraphRepositoryVertex"/> to the target GraphVertex.
+            </summary>
+            <param name="graphRepositoryVertex">The graph repository vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.MapTo(`1,System.Boolean)">
+            <summary>
+            Maps the specified GraphEdge to the destination <see cref="T:XAct.Graphs.GraphRepositoryEdge" />
+            </summary>
+            <param name="graphEdge">The graph edge.</param>
+            <param name="refetchFromDataStore">if set to <c>true</c> [refetch from data store].</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphPersistenceServiceBase`2.MapTo(XAct.Graphs.GraphRepositoryEdge)">
+            <summary>
+            Maps the specified <see cref="T:XAct.Graphs.GraphRepositoryEdge"/> to the target GraphEdge.
+            </summary>
+            <param name="graphEdge">The graph edge.</param>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.Implementations.GraphService">
+            <summary>
+            An implementation of <see cref="T:XAct.Graphs.IGraphService" />
+            to create Bidirectional graph of objects.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.#ctor(XAct.Diagnostics.ITracingService,XAct.Graphs.IDefaultGraphPersistenceService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Implementations.GraphService" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="persistenceService">The persistence service.</param>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.CreateGraph``2(System.Guid,XAct.Graphs.GraphType)">
+            <summary>
+            Creates a new Graph object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.CreateGraph``2(System.String,System.String,XAct.Graphs.GraphType)">
+            <summary>
+            Creates the create.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="description">The description.</param>
+            <param name="graphType">Type of the graph.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.GetGraphByName``2(System.String)">
+            <summary>
+            Creates and registers a new Graph.
+            </summary>
+            <typeparam name="TGraphVertex"></typeparam>
+            <typeparam name="TGraphEdge"></typeparam>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.GetGraphById``2(System.Guid)">
+            <summary>
+            Gets the graph.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <param name="graphId">The graph id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Implementations.GraphService.DeleteGraph``2(System.Guid)">
+            <summary>
+            Delete's an existing <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            in which to persist <see cref="T:XAct.Graphs.IGraphVertex"/> and <see cref="T:XAct.Graphs.IGraphEdge`1"/>
+            entities.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <param name="graphId">The graph's unique id.</param>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.IDefaultGraphRepositoryService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.Services.Implementations.DefaultGraphRepositoryService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.DefaultGraphRepositoryService.#ctor(XAct.Diagnostics.ITracingService,XAct.Domain.Repositories.IRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Services.Implementations.DefaultGraphRepositoryService" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="repositoryService">The repository service.</param>
+        </member>
+        <member name="T:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2">
+            <summary>
+            Base class to build <see cref="T:XAct.Graphs.Services.Implementations.DefaultGraphRepositoryService"/>
+            </summary>
+            <typeparam name="TGraphVertex"></typeparam>
+            <typeparam name="TGraphEdge"></typeparam>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.#ctor(XAct.Diagnostics.ITracingService,XAct.Domain.Repositories.IRepositoryService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="repositoryService">The repository service.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetGraphDescription(System.String)">
+            <summary>
+            Gets the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            </summary>
+            <param name="uniqueName">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetGraphDescription(System.Guid)">
+            <summary>
+            Gets the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            </summary>
+            <param name="guid">The GUID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.DeleteGraphPackageSchema(System.Guid)">
+            <summary>
+            Deletes the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            </summary>
+            <param name="guid">The GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.PersistGraphPackageSchema(XAct.Graphs.GraphRepositoryPackageSchema)">
+            <summary>
+            Persists the specified graph definition.
+            </summary>
+            <param name="graphDefinition">The graph definition.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetGraphData(System.Guid)">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <param name="graphId">The graph identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.VertexExists(System.Guid)">
+            <summary>
+            Determines if there is a Vertex with the given Id.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetVertex(System.Guid)">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetVertex(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetVertexAndEdges(System.Guid)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="vertexId">The vertex datastore identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetVertexAndEdges(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.PersistVertex(`0)">
+            <summary>
+            Persists the vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.RemoveVertex(System.Guid)">
+            <summary>
+            Removes the vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.RemoveVertex(`0)">
+            <summary>
+            Removes the vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetInEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets edges whose target are the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetOutEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets edges whose source are the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include target vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets all (incoming and outgoing edges) edges
+            whose source is the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source and target vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetEdge(System.Guid,System.Boolean)">
+            <summary>
+            Get the given edge.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.EdgeExists(System.Guid)">
+            <summary>
+            Determine if Edge record exists.
+            </summary>
+            <param name="edgeId">The edge identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.PersistEdge(`1)">
+            <summary>
+            Persists the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.DeleteEdge(System.Guid)">
+            <summary>
+            Deletes the specified edge.
+            <para>
+            No exception is raised if the edge is not found.
+            </para>
+            </summary>
+            <param name="edgeId">The edge id.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.DeleteEdge(`1)">
+            <summary>
+            Deletes the specified edge.
+            <para>
+            No exception is raised if the edge is not found.
+            </para>
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.Services.Implementations.GraphRepositoryServiceBase`2.GetVertex(System.Guid,System.Guid)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="graphId">The graph id.</param>
+            <param name="vertexId">The vertex datastore identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.IGraphVertexAttributeService">
+            <summary>
+            Contract for a service to return the current user's 
+            attributes for graph Edges.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeService.SetAttributeValue``1(XAct.Graphs.GraphElementType,System.Guid,System.String,``0)">
+            <summary>
+            Sets the attribute value.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeService.RemoveAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Removes the attribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeService.GetAttributeValue``1(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Gets the attribute value.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="key">The key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeService.GetUserAttributes(XAct.Graphs.GraphElementType,System.Guid,System.Boolean)">
+            <summary>
+            Gets the current thread's user's vertex/edge attributes.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The edge/vertex guid.</param>
+            <param name="forceRefresh">if set to <c>true</c> [force refresh].</param>
+            <returns>
+            Returns null if no entities
+            </returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">entityType</exception>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeService.ResetAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Resets the attributes so that next request loads from a datastore
+            before returning any found attributes.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="entityGuid">The entity GUID.</param>
+        </member>
+        <member name="T:XAct.Graphs.IGraphVertexAttributeRepositoryService">
+            <summary>
+            Contract for getting Attributes for a single Element
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.SetAttributeValue(XAct.Graphs.GraphRepositoryVertexAttribute)">
+            <summary>
+            Persist the new or existing specific element's attribute value.
+            </summary>
+            <param name="graphElementAttribute">The graph vertex attribute.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.GetAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Gets the specific element'sattribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.RemoveAttributeValue(XAct.Graphs.GraphElementType,System.Guid,System.String)">
+            <summary>
+            Removes the specific element's attribute value.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+            <param name="attributeKey">The attribute key.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.CleareAttributeValues``1(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Cleares the specific element's attribute values.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="elementGuid">The element GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.GetSharedAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Gets the current user's attributes for a single edge/vertex.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="vertexGuid">The vertex's GUID.</param>
+            <returns></returns>
+            <internal>
+            Does not need GraphId argument as one cannot get a ElementId without a GraphId
+              </internal>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.GetCurrentUserAttributes(XAct.Graphs.GraphElementType,System.Guid)">
+            <summary>
+            Gets the current user's attributes for a single edge/vertex.
+            </summary>
+            <param name="graphElementType">Type of the graph element.</param>
+            <param name="vertexGuid">The vertex's GUID.</param>
+            <returns></returns>
+            <internal>
+            Does not need GraphId argument as one cannot get a ElementId without a GraphId
+              </internal>
+        </member>
+        <member name="M:XAct.Graphs.IGraphVertexAttributeRepositoryService.PersistOnCommit(XAct.Graphs.GraphRepositoryVertexAttribute[])">
+            <summary>
+            Persists the given <see cref="T:XAct.Graphs.GraphRepositoryVertexAttribute"/>
+            on next commit.
+            </summary>
+            <param name="attributes">The attributes.</param>
+        </member>
+        <member name="T:XAct.Graphs.IGraphDiagramService">
+            <summary>
+            Contract for managing Diagrams made up of Edges and Vertices.
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.IGraphEdgeWrapper`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+        </member>
+        <member name="P:XAct.Graphs.IGraphEdgeWrapper`1.EdgeWrapper">
+            <summary>
+            Gets the Wrapper that was used to put the object in the Graph.
+            <para>
+            IMPORTANT: Implement Explitly.
+            </para>
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.IGraphRepositoryService`2">
+            <summary>
+            A base contract for handling Graph elements.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetGraphDescription(System.String)">
+            <summary>
+            Gets the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>,
+            which describes a <see cref="T:XAct.Graphs.GraphPackage`2"/>
+            </summary>
+            <param name="uniqueName">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetGraphDescription(System.Guid)">
+            <summary>
+            Gets the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            which describes a <see cref="T:XAct.Graphs.GraphPackage`2"/>
+            </summary>
+            <param name="guid">The GUID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.DeleteGraphPackageSchema(System.Guid)">
+            <summary>
+            Deletes the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>
+            definition of a 
+            <see cref="T:XAct.Graphs.GraphPackage`2"/>
+            </summary>
+            <param name="guid">The GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.PersistGraphPackageSchema(XAct.Graphs.GraphRepositoryPackageSchema)">
+            <summary>
+            Saves new or updated <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            which describes a <see cref="T:XAct.Graphs.GraphPackage`2"/>
+            </summary>
+            <param name="graphDefinition">The graph definition.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetGraphData(System.Guid)">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <param name="graphId">The graph identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.VertexExists(System.Guid)">
+            <summary>
+            Determines if there is a Vertex with the given Id.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetVertex(System.Guid)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="vertexId">The vertex datastore identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetVertex(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets from the datastore the vertex specified by the datasource info.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetVertexAndEdges(System.Guid)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="vertexId">The vertex datastore identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetVertexAndEdges(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.PersistVertex(`0)">
+            <summary>
+            Gets from the datastore the vertex specified by the identifier.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.RemoveVertex(System.Guid)">
+            <summary>
+            Removes the vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.RemoveVertex(`0)">
+            <summary>
+            Removes the vertex.
+            </summary>
+            <param name="vertexDto">The vertex dto.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetInEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets edges whose target are the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetOutEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets the edges whose source is the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include target vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetEdges(System.Guid,System.Boolean)">
+            <summary>
+            Gets all (incoming and outgoing edges) edges
+            whose source is the given vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source and target vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.GetEdge(System.Guid,System.Boolean)">
+            <summary>
+            Get the given edge.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+            <param name="includeVertices">if set to <c>true</c>, include source vertices.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.EdgeExists(System.Guid)">
+            <summary>
+            Determines whether there is and record with the given Id.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.PersistEdge(`1)">
+            <summary>
+            Persists the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.DeleteEdge(System.Guid)">
+            <summary>
+            Deletes the specified edge.
+            <para>
+            No exception is raised if the edge is not found.
+            </para>
+            </summary>
+            <param name="edgeId">The edge id.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphRepositoryService`2.DeleteEdge(`1)">
+            <summary>
+            Deletes the specified edge.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphElementAttributes">
+            <summary>
+            A cache of a single user's attributes
+            for a single element vertex/edge.
+            <para>
+            Used by <see cref="T:XAct.Graphs.Implementations.GraphElementsAttributes" />,
+            which is a cache of all element attributes per user
+            (keeping element attributes stored per user, not per node,
+            separating them better for security as well as making them
+            easier to dump at the end of a session).
+            </para>
+            <para>
+            <see cref="T:XAct.Graphs.Implementations.GraphElementsAttributes"/> is in
+            turned managed by an implementation of 
+            <see cref="T:XAct.Graphs.IGraphVertexAttributeService"/>
+            </para>
+            <para>
+            TODO: To be serializable out of proc, it's going to have to be serializable. 
+            </para>
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.GraphElementAttributes.LastCheckedUtc">
+            <summary>
+            Gets or sets the UTC date on which the Db was last checked for attributes
+            </summary>
+            <value>
+            The last checked UTC.
+            </value>
+        </member>
+        <member name="P:XAct.Graphs.GraphElementAttributes.Attributes">
+            <summary>
+            Gets or sets a single user's attributes for a single element.
+            </summary>
+            <value>
+            The attributes. Null if no attributes.
+            </value>
+            <remarks>
+            The use of an array rather than a list, makes it a little
+            more difficult to make updates, but saves memory space.
+            </remarks>
+        </member>
+        <member name="T:XAct.Graphs.BidirectionalGraph`2">
+            <summary>
+            A Bidirectional Graph implementation of <see cref="T:XAct.Graphs.IGraph`2"/>
+            <para>
+            In order to not drag a reference to QuickGraph up and down the stack,
+            this is a wrapper of a QuickGraph Bidirectional graph, that 
+            can be retrieved as needed, using <see cref="T:XAct.IHasInnerItemReadOnly"/>
+            to get to it.
+            </para>
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+        </member>
+        <member name="P:XAct.Graphs.BidirectionalGraph`2.Id">
+            <summary>
+            Gets the Graph id.
+            </summary>
+            <value>
+            The id.
+            </value>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.#ctor(XAct.Diagnostics.ITracingService,XAct.Graphs.IGraphPersistenceService{`0,XAct.Graphs.IGraphEdge{`0}},System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.BidirectionalGraph`2" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="graphPersistenceService">The graph persistence service.</param>
+            <param name="id">The id.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.XAct#IHasInnerItemReadOnly#GetInnerItem``1">
+            <summary>
+            Gets the inner item ( the QuickGraph, typed as an object).
+            <para>
+            This can be useful to pass the QG graph to a QG walker/algorithm.
+            </para>
+            </summary>
+            <value>
+            The inner item.
+            </value>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.LoadGraphData">
+            <summary>
+            Loads the graph data.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.LoadVertices(System.Guid[])">
+            <summary>
+            Loads the vertices.
+            </summary>
+            <param name="ids">The ids.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.LoadVertices(XAct.IHasDataSourceIdentifier[])">
+            <summary>
+            Loads the vertices.
+            </summary>
+            <param name="dataSourceIdentifiers">The data source identifiers.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.Persist">
+            <summary>
+            Persists this instance.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.AddVertex(`0)">
+            <summary>
+            Adds the vertex to the graph.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.RemoveVertex(`0)">
+            <summary>
+            Removes the vertex from the graph,
+            and any Edges that have this vertex as their
+            Source or Target.
+            <para>
+            Periodically Invoked by MruCleaner.
+            </para>
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.AddEdge(`1)">
+            <summary>
+            Adds the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.EdgeCount">
+            <summary>
+            Edges the count.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.VertexCount">
+            <summary>
+            Vertexes the count.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.RemoveEdge(`1)">
+            <summary>
+            Removes the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.GetInEdges(`0)">
+            <summary>
+            Gets the in edges for the vertex
+            (Edges that have this vertex as their Target).
+            </summary>
+            <param name="vertex">The vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.GetOutEdges(`0)">
+            <summary>
+            Gets the out edges for the vertex
+            (Edges that have this vertex as their Source).
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.GetAllEdges(`0)">
+            <summary>
+            Gets the edges (in and out) for the vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.CompletePartialVertex(`0)">
+            <summary>
+            Prepares the vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.ShortestPathDijkstra(`0,`0,XAct.Graphs.ShortestPathAlgorithm)">
+            <summary>
+            Shortests the path dijkstra.
+            </summary>
+            <param name="rootVertex">The root vertex.</param>
+            <param name="targetVertex">The target vertex.</param>
+            <param name="shortestPathAlgorithm">The shortest path algorithm.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">shortestPathAlgorithm</exception>
+        </member>
+        <member name="M:XAct.Graphs.BidirectionalGraph`2.TopologicalSort">
+            <summary>
+            Topologicals the sort.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.IGraphService">
+            <summary>
+            Contract for a service to manage a Graph of vertices.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.IGraphService.CreateGraph``2(System.String,System.String,XAct.Graphs.GraphType)">
+            <summary>
+            Creates a new <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            in which to persist <see cref="T:XAct.Graphs.IGraphVertex"/> and <see cref="T:XAct.Graphs.IGraphEdge`1"/>
+            entities.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="description">The description.</param>
+            <param name="graphType">Type of the graph.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphService.CreateGraph``2(System.Guid,XAct.Graphs.GraphType)">
+            <summary>
+            Creates the graph.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <param name="graphId">The graph id.</param>
+            <param name="graphType">Type of the graph.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphService.GetGraphByName``2(System.String)">
+            <summary>
+            Get's an existing <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            in which to persist <see cref="T:XAct.Graphs.IGraphVertex"/> and <see cref="T:XAct.Graphs.IGraphEdge`1"/>
+            entities.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphService.GetGraphById``2(System.Guid)">
+            <summary>
+            Get's an existing <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            in which to persist <see cref="T:XAct.Graphs.IGraphVertex"/> and <see cref="T:XAct.Graphs.IGraphEdge`1"/>
+            entities.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <param name="graphId">The graph's unique id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphService.DeleteGraph``2(System.Guid)">
+            <summary>
+            Delete's an existing <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            in which to persist <see cref="T:XAct.Graphs.IGraphVertex"/> and <see cref="T:XAct.Graphs.IGraphEdge`1"/>
+            entities.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <param name="graphId">The graph's unique id.</param>
+            <returns></returns>
+        </member>
+        <member name="T:XAct.Graphs.DefaultBidirectionalGraph">
+            <summary>
+            A default specialization of 
+            <see cref="T:XAct.Graphs.BidirectionalGraph`2"/>
+            for working with the default <see cref="T:XAct.Graphs.GraphVertex"/>
+            and <see cref="T:XAct.Graphs.GraphEdge"/>
+            <para>
+            Exposed as a property of 
+            <see cref="T:XAct.Graphs.GraphPackage`2"/>
+            </para>
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.DefaultBidirectionalGraph.#ctor(XAct.Diagnostics.ITracingService,XAct.Graphs.IGraphPersistenceService{XAct.Graphs.GraphVertex,XAct.Graphs.IGraphEdge{XAct.Graphs.GraphVertex}},System.Guid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.DefaultBidirectionalGraph" /> class.
+            </summary>
+            <param name="tracingService">The tracing service.</param>
+            <param name="graphPersistenceService">The graph repository service.</param>
+            <param name="graphId">The graph id.</param>
+        </member>
+        <member name="T:XAct.Graphs.CancelEdgeEventArgs`1">
+            <summary>
+            Cancelable event with an <see cref="T:XAct.Graphs.IGraphEdge`1"/> property
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.CancelEdgeEventArgs`1.Edge">
+            <summary>
+            Gets the edge.
+            </summary>
+            <value>The edge.</value>
+        </member>
+        <member name="M:XAct.Graphs.CancelEdgeEventArgs`1.#ctor(XAct.Graphs.IGraphEdge{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.CancelEdgeEventArgs`1"/> class.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="T:XAct.Graphs.CancelVertexEventArgs`1">
+            <summary>
+            Cancelable Event with a GraphVertex property
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.CancelVertexEventArgs`1.Vertex">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <value>The vertex.</value>
+        </member>
+        <member name="M:XAct.Graphs.CancelVertexEventArgs`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.CancelVertexEventArgs`1"/> class.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphEdgeEventArgs`2">
+            <summary>
+            Event Args package pertaining to a Edge.
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.GraphEdgeEventArgs`2.Edge">
+            <summary>
+            Gets the vertex the event is about.
+            </summary>
+            <value>The vertex.</value>
+        </member>
+        <member name="M:XAct.Graphs.GraphEdgeEventArgs`2.#ctor(`1)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphEdgeEventArgs`2"/> class.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphItemCancelEventArgsBase`1">
+            <summary>
+            Generic Cancellable EventArgs package.
+            </summary>
+            <typeparam name="TItem">The type of the item.</typeparam>
+        </member>
+        <member name="M:XAct.Graphs.GraphItemCancelEventArgsBase`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphItemEventArgsBase`1"/> class.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:XAct.Graphs.GraphItemCancelEventArgsBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphItemEventArgsBase`1"/> class.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="allowDefaultValue">if set to <c>true</c> allow a null(default) item.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphItemEventArgsBase`1">
+            <summary>
+            Abstract base class for Event Args.
+            </summary>
+            <typeparam name="TItem"></typeparam>
+        </member>
+        <member name="F:XAct.Graphs.GraphItemEventArgsBase`1._Item">
+            <summary>
+            The generic item this argument package is about.
+            </summary>
+            <remarks>
+            <para>
+            Enherit from this class and do something like the following:
+            <code>
+            <![CDATA[
+            public Vertex Vertex {
+            	get {
+            	return _Item;
+            	}
+            }
+            ]]>
+            </code>
+            </para>
+            </remarks>
+        </member>
+        <member name="M:XAct.Graphs.GraphItemEventArgsBase`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphItemEventArgsBase`1"/> class.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="M:XAct.Graphs.GraphItemEventArgsBase`1.#ctor(`0,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphItemEventArgsBase`1"/> class.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="allowDefaultValue">if set to <c>true</c> allow a null(default) item.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphVertexEventArgs`1">
+            <summary>
+            Event Args package pertaining to a Vertex.
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.GraphVertexEventArgs`1.Vertex">
+            <summary>
+            Gets the vertex the event is about.
+            </summary>
+            <value>The vertex.</value>
+        </member>
+        <member name="M:XAct.Graphs.GraphVertexEventArgs`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphVertexEventArgs`1"/> class.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphMruCleaner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner.#ctor(XAct.Graphs.IMRUGraph{XAct.Graphs.GraphVertex,XAct.Graphs.GraphEdge})">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphMruCleaner" /> class.
+            </summary>
+            <param name="graph">The graph.</param>
+        </member>
+        <member name="T:XAct.Graphs.GraphMruCleaner`2">
+            <summary>
+            An implementation of <see cref="T:XAct.Graphs.IGraphPruner`2"/>
+            to release vertices from memory.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+        </member>
+        <member name="F:XAct.Graphs.GraphMruCleaner`2.PreferredMaximumNumberOfNodes">
+            <summary>
+            Default preferred maximum size of the graph.
+            </summary>
+        </member>
+        <member name="E:XAct.Graphs.GraphMruCleaner`2.CancellablePersistVertex">
+            <summary>
+            Event raised to persis the given vertex.
+            </summary>
+        </member>
+        <member name="E:XAct.Graphs.GraphMruCleaner`2.CancellableCullingVertex">
+            <summary>
+            Occurs when a vertex is about to be converted into a placeholder vertex
+            removing its data from memory. 
+            <para>
+            Note that this is just befoe it gets persisted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.GraphMruCleaner`2.PreferredMaxNumberofVertices">
+            <summary>
+            Gets or sets the preferred max number of Vertices to keep in the graph.
+            <para>
+            Default value is 1024 Vertices..which is of course totally arbitrary.
+            </para>
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.#ctor(XAct.Graphs.IMRUGraph{`0,`1})">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.GraphMruCleaner`2" /> class.
+            </summary>
+            <param name="graph">The graph.</param>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.Touch(`0)">
+            <summary>
+            Traces the specified vertex.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.ReleaseVertices">
+            <summary>
+            Culls this graph of old/stale vertices.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.VerifyWhetherToCancelCull(`0)">
+            <summary>
+            Raises an optional cancellable event, and returns true
+            if event handler wants to cancel culling of this item.
+            </summary>
+            <param name="vertex">The vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.OnCancelCullingVertex(XAct.Graphs.CancelVertexEventArgs{`0})">
+            <summary>
+            Raises the <see cref="E:XAct.Graphs.GraphMruCleaner`2.CancellableCullingVertex"/> event.
+            <para>
+            Invoked by <see cref="M:XAct.Graphs.GraphMruCleaner`2.VerifyWhetherToCancelCull(`0)"/> 
+            </para>
+            </summary>
+            <param name="eventArgs">The <see cref="T:XAct.Graphs.CancelVertexEventArgs`1"/> instance containing the event data.</param>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.PersistVertex(`0)">
+            <summary>
+            Raises an optional cancellable event, and returns true
+            if event handler wants to cancel culling of this item.
+            </summary>
+            <param name="vertex">The vertex.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.GraphMruCleaner`2.OnCancelPersistVertex(XAct.Graphs.CancelVertexEventArgs{`0})">
+            <summary>
+            Raises the <see cref="E:XAct.Graphs.GraphMruCleaner`2.CancellablePersistVertex"/> event.
+            <para>
+            Invoked by <see cref="M:XAct.Graphs.GraphMruCleaner`2.VerifyWhetherToCancelCull(`0)"/> 
+            </para>
+            </summary>
+            <param name="eventArgs">The <see cref="T:XAct.Graphs.CancelVertexEventArgs`1"/> instance containing the event data.</param>
+        </member>
+        <member name="T:XAct.Graphs.IGraphPersistenceService`2">
+            <summary>
+            A service to persist Graph Vertices.
+            </summary>
+            <typeparam name="TGraphVertex">The type of the graph vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+            <internal>
+            Note that this service only handles persistence of the
+            Vertices -- not the DataSource they point to.
+              </internal>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetGraph(System.String)">
+            <summary>
+            Gets the graph description.
+            </summary>
+            <param name="uniqueName">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetGraph(System.Guid)">
+            <summary>
+            Gets the graph description.
+            </summary>
+            <param name="guid">The GUID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.DeleteGraph(System.Guid)">
+            <summary>
+            Deletes the <see cref="T:XAct.Graphs.GraphRepositoryPackageSchema"/>.
+            </summary>
+            <param name="guid">The GUID.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.PersistGraph(XAct.Graphs.GraphRepositoryPackageSchema)">
+            <summary>
+            Persists the specified graph definition.
+            </summary>
+            <param name="graphDefinition">The graph definition.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetGraphData(System.Guid)">
+            <summary>
+            Gets the graph data.
+            </summary>
+            <param name="graphId">The graph identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.VertexExists(System.Guid)">
+            <summary>
+            Determine if there is a record for the vertex.
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetVertex(System.Guid)">
+            <summary>
+            Gets the specified vertex.
+            <para>
+            Note: Only called by IGraph{V,E} to Complete an incomplete Graph.
+            </para>
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetVertex(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetVertexAndEdges(System.Guid)">
+            <summary>
+            Gets the specified vertex.
+            <para>
+            Note: Only called by IGraph{V,E} to Complete an incomplete Graph.
+            </para>
+            </summary>
+            <param name="vertexId">The vertex id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.GetVertexAndEdges(XAct.IHasDataSourceIdentifier)">
+            <summary>
+            Gets the vertex.
+            </summary>
+            <param name="dataSourceIdentifier">The data source identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.RefreshVertex(`0)">
+            <summary>
+            Refreshes a Vertex with current database values.
+            Used by <c>DefaultBiDirectionalGraph.Prepare</c>
+            </summary>
+            <param name="graphVertex"></param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.PersistVertex(`0)">
+            <summary>
+            Persists the specified vertex to a persistent storage (on next commit).
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.DeleteVertex(`0)">
+            <summary>
+            Deletes the vertex (on next commit), as well as Edges that connect to it.
+            </summary>
+            <param name="graphVertex">The graph vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.EdgeExists(System.Guid)">
+            <summary>
+            Determine if there is a record for the edge.
+            </summary>
+            <param name="edgeId">The edge id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPersistenceService`2.PersistEdge(`1)">
+            <summary>
+            Adds the edge.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="T:XAct.Graphs.IGraphPruner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.IGraphPruner`2">
+            <summary>
+            The contract for a service to cull stale vertices in 
+            order to allow working with graphs that don't fit in available memory.
+            </summary>
+            <remarks>
+            Many graphs are too large to fit in memory.
+            To allow for this, vertices that are no longer being used (stale)
+            should be removed.
+            This service, allows for this.
+            </remarks>
+            <typeparam name="TGraphVertex">The type of the vertex.</typeparam>
+            <typeparam name="TGraphEdge">The type of the graph edge.</typeparam>
+        </member>
+        <member name="E:XAct.Graphs.IGraphPruner`2.CancellableCullingVertex">
+            <summary>
+            Occurs when a vertex is about to be converted into a placeholder vertex
+            removing its data from memory. 
+            <para>
+            Note that this is just befoe it gets persisted.
+            </para>
+            </summary>
+        </member>
+        <member name="P:XAct.Graphs.IGraphPruner`2.PreferredMaxNumberofVertices">
+            <summary>
+            Gets or sets the preferred max number of Vertices to keep in the graph.
+            </summary>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPruner`2.Touch(`0)">
+            <summary>
+            Puts the vertex at the top of the internal MruList.
+            </summary>
+            <param name="vertex">The vertex.</param>
+        </member>
+        <member name="M:XAct.Graphs.IGraphPruner`2.ReleaseVertices">
+            <summary>
+            Culls this graph of old/stale vertices.
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.IGraphDataService">
+            <summary>
+            Contract for a service that will work with the data of the Graph
+            </summary>
+        </member>
+        <member name="T:XAct.Graphs.QuickGraphEdgeShim`1">
+            <summary>
+            A shim/wrapper to insert non QuickGraph compliant Edges into 
+            a QuickGraph Graph.
+            </summary>
+            <remarks>
+            <para>
+            The QuickGraph library requires that all Edges implement it's IEdge interface.
+            But you don't want to apply that directly to your domain edges, or you'll
+            drag a ref to that library all up and down your stack.
+            </para>
+            <para>
+            A solution is to use a shim/wrapper to insert your own edges (that don't 
+            implement QG's edge interface) into the graph.
+            </para>
+            <para>
+            To retrieve your own inner edge, use the <see cref="M:XAct.Graphs.QuickGraphEdgeShim`1.GetInnerItem``1"/>
+            property.
+            </para>
+            </remarks>
+            <typeparam name="TVertex">The type of the vertex.</typeparam>
+        </member>
+        <member name="M:XAct.Graphs.QuickGraphEdgeShim`1.#ctor(XAct.Graphs.IGraphEdge{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:XAct.Graphs.QuickGraphEdgeShim`1" /> class.
+            </summary>
+            <param name="edge">The edge.</param>
+        </member>
+        <member name="P:XAct.Graphs.QuickGraphEdgeShim`1.Source">
+            <summary>
+            Gets the source.
+            <para>
+            Method defined in <see cref="T:QuickGraph.IEdge`1"/>
+            </para>
+            </summary>
+            <value>
+            The source.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:XAct.Graphs.QuickGraphEdgeShim`1.Target">
+            <summary>
+            Gets the target.
+            <para>
+            Method defined in <see cref="T:QuickGraph.IEdge`1"/>
+            </para>
+            </summary>
+            <value>
+            The target.
+            </value>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="M:XAct.Graphs.QuickGraphEdgeShim`1.GetInnerItem``1">
+            <summary>
+            Gets or sets the inner Edge item.
+            <para>
+            Method defined in <see cref="T:XAct.IHasInnerItemReadOnly"/>
+            </para>
+            </summary>
+            <value>
+            The inner item.
+            </value>
+        </member>
+        <member name="T:XAct.GraphElementAttributeExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:XAct.GraphElementAttributeExtensions.Map(XAct.Graphs.GraphRepositoryVertexAttribute)">
+            <summary>
+            Maps the given <see cref="T:XAct.Graphs.GraphRepositoryVertexAttribute"/>
+            to a new <see cref="T:XAct.Graphs.GraphEntityAttribute2"/>.
+            </summary>
+            <remarks>
+            Used by <see cref="T:XAct.Graphs.IGraphVertexAttributeService"/>
+            </remarks>
+            <param name="source">The source.</param>
+            <returns></returns>
+        </member>
+        <member name="T:IGraphEdgeExtensions">
+            <summary>
+            Extension methods for IGraphEdge{TVertex} based edges.
+            </summary>
+        </member>
+        <member name="M:IGraphEdgeExtensions.GetGraphPersistenceService``1(XAct.Graphs.IGraphEdge{``0})">
+            <summary>
+            Gets the graph persistence service.
+            </summary>
+        </member>
+    </members>
+</doc>

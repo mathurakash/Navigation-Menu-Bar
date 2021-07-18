@@ -1,0 +1,19 @@
+D:\Visual Studio 2013\Projects\Panguian\Panguian\bin\Debug\Panguian.exe.config
+D:\Visual Studio 2013\Projects\Panguian\Panguian\bin\Debug\Panguian.exe
+D:\Visual Studio 2013\Projects\Panguian\Panguian\bin\Debug\Panguian.pdb
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.Form1.resources
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.Properties.Resources.resources
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.csproj.GenerateResource.Cache
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.exe
+D:\Visual Studio 2013\Projects\Panguian\Panguian\obj\Debug\Panguian.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\bin\Debug\Panguian.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\bin\Debug\Panguian.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\bin\Debug\Panguian.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.CoinCollection.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.Properties.Resources.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.csproj.GenerateResource.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\Panguian\Panguian\obj\Debug\Panguian.csprojAssemblyReference.cache

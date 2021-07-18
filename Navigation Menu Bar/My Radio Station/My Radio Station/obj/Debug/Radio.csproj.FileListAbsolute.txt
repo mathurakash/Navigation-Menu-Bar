@@ -1,0 +1,29 @@
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\bin\Debug\My Radio Station.exe.config
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\bin\Debug\My Radio Station.exe
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\bin\Debug\My Radio Station.pdb
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\bin\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\bin\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\Radio.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\Radio.csproj.ResolveComReference.cache
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\My_Radio_Station.Form1.resources
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\My_Radio_Station.Properties.Resources.resources
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\Radio.csproj.GenerateResource.Cache
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\My Radio Station.exe
+D:\Visual Studio 2013\Projects\My Radio Station\My Radio Station\obj\Debug\My Radio Station.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\bin\Debug\My Radio Station.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\bin\Debug\My Radio Station.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\bin\Debug\My Radio Station.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\bin\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\bin\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\Radio.csprojAssemblyReference.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\Interop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\AxInterop.WMPLib.dll
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\Radio.csproj.ResolveComReference.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\My_Radio_Station.Radio.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\My_Radio_Station.Properties.Resources.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\Radio.csproj.GenerateResource.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\Radio.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\My Radio Station.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\My Radio Station\My Radio Station\obj\Debug\My Radio Station.pdb

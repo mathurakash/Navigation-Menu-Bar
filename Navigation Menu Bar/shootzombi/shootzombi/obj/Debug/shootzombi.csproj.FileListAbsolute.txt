@@ -1,0 +1,19 @@
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\bin\Debug\shootzombi.exe.config
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.csprojResolveAssemblyReference.cache
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.Form1.resources
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.Properties.Resources.resources
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.csproj.GenerateResource.Cache
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\bin\Debug\shootzombi.exe
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\bin\Debug\shootzombi.pdb
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.exe
+C:\Users\Akash\Dropbox\My PC (DESKTOP-3SG7A4T)\Documents\Visual Studio 2013\Projects\shootzombi\shootzombi\obj\Debug\shootzombi.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\bin\Debug\shootzombi.exe.config
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\bin\Debug\shootzombi.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\bin\Debug\shootzombi.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.Form1.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.Properties.Resources.resources
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.csproj.GenerateResource.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.csproj.CoreCompileInputs.cache
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.exe
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.pdb
+D:\Visual Studio 2019\Projects\Navigation Menu Bar\Navigation Menu Bar\shootzombi\shootzombi\obj\Debug\shootzombi.csprojAssemblyReference.cache
